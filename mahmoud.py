@@ -107,9 +107,6 @@ async def Hussein(event):
     seconds = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
     message =  await event.get_reply_message()
     try:
-    	await app2.join_chat("YY5Y8")
-        await app2.join_chat("VY_GROUP")
-    try:
         sleeptimet = int(seconds[0])
     except Exception:
         return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️")
