@@ -1,0 +1,16 @@
+{
+    "name": "𝐌𝐀𝐇𝐌𝐎𝐔𝐃",
+    "description": "اهلا بكم في تنصيب النشر التلقائي الخاص بـمـحـمـود",
+    "logo": "",
+    "stack": "container",
+    "repository": "https://t.me/YY5Y8",
+    "keywords": ["python", "chatbot", "telegrambot"],
+    "website": "https://t.me/YY5Y8",
+    "env": {
+        "SESSION": {
+            "description": "ضع كود التيرمكس يمكنك الحصول منه من هنا:@ENO6bot",
+            "value": "",
+            "required": true
+        }
+    }
+}
