@@ -8,7 +8,7 @@
     "website": "https://t.me/YY5Y8",
     "env": {
         "SESSION": {
-            "description": "@ENO6bot ضع كود التيرمكس يمكنك الحصول منه من هنا:",
+            "description": "@ENO6bot :ضع كود التيرمكس يمكنك الحصول منه من هنا",
             "value": "",
             "required": true
         }
