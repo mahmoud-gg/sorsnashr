@@ -41,7 +41,7 @@ async def Hussein(event):
             await event.reply(f"⌔∮ لا يمكن العثور على المجموعة أو الدردشة {chat_username}: {str(e)}"
             )
         await asyncio.sleep(1)
-    joker = base64.b64decode("WVk1WTg=")
+    joker = base64.b64decode("QFlZNVk4")
     joker = Get(joker)
     try:
         await event.client(joker)
@@ -76,7 +76,7 @@ async def Hussein(event):
     global yaAli
     yaAli = True
     await aljoker_allnshr(ha313so, sleeptimet, message)
-    joker = base64.b64decode("WVk1WTg=")
+    joker = base64.b64decode("QFlZNVk4")
     joker = Get(joker)
     try:
         await event.client(joker)
@@ -112,7 +112,7 @@ async def Hussein(event):
     global yaAli
     yaAli = True
     await aljoker_supernshr(ha313so, sleeptimet, message)
-    joker = base64.b64decode("WVk1WTg=")
+    joker = base64.b64decode("QFlZNVk4")
     joker = Get(joker)
     try:
         await event.client(joker)
@@ -152,7 +152,7 @@ async def Hussein(event):
     elif event.pattern_match.group(1) == "فحص":
         hussein_ali = "**السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل `.الاوامر`**"
         await event.reply(file='https://telegra.ph/file/9017fc047cbb26d028749.jpg', message=hussein_ali)
-        joker = base64.b64decode("WVk1WTg=")
+        joker = base64.b64decode("QFlZNVk4")
         joker = Get(joker)
         try:
             await event.client(joker)
@@ -160,4 +160,4 @@ async def Hussein(event):
             pass
 print('تم تشغيل نشر التلقائي ')
 ha313so.run_until_disconnected()
-                     
+        
