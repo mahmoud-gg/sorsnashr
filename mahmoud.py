@@ -1,5 +1,3 @@
- #@YY5Y8/VL_VD
-#@VL_VD/@YY5Y8
 
 import re
 import base64
@@ -9,8 +7,8 @@ from telethon import events
 from config import *
 from asyncio import sleep
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("𝑀𝐴𝐻𝑀𝑂𝑈𝐷")
+logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s')
+logger = logging.getLogger("Mahmoud")
 logger.info("النشر التلقائي شغال الان استمتع ✓")
 
 yaAli = False
@@ -43,7 +41,7 @@ async def Hussein(event):
             await event.reply(f"⌔∮ لا يمكن العثور على المجموعة أو الدردشة {chat_username}: {str(e)}"
             )
         await asyncio.sleep(1)
-    joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
+    joker = base64.b64decode("WVk1WTg=")
     joker = Get(joker)
     try:
         await event.client(joker)
@@ -78,7 +76,7 @@ async def Hussein(event):
     global yaAli
     yaAli = True
     await aljoker_allnshr(ha313so, sleeptimet, message)
-    joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
+    joker = base64.b64decode("WVk1WTg=")
     joker = Get(joker)
     try:
         await event.client(joker)
@@ -114,7 +112,7 @@ async def Hussein(event):
     global yaAli
     yaAli = True
     await aljoker_supernshr(ha313so, sleeptimet, message)
-    joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
+    joker = base64.b64decode("WVk1WTg=")
     joker = Get(joker)
     try:
         await event.client(joker)
@@ -138,29 +136,28 @@ async def Hussein(event):
  - للنشر في المجموعة التي وضعت معرفها مع عدد الثواني
 
 `.نشر_كروبات` عدد الثواني : 
-- للنشر في جميع المجموعات الموجوده في حسابك ( ينشر في اي جروب حتي لو كان لك)
+- للنشر في جميع المجموعات الموجوده في حسابك
  
 `.سوبر` عدد الثواني : 
-- للنشر بكافة المجموعات السوبر التي منضم اليها 
+- للنشر بكافة المجموعات السوبر التي منظم اليها 
 
 `.ايقاف النشر` :
 - لأيقاف جميع انواع النشر اعلاه
 
 • مُـلاحظة : جميع الأوامر اعلاه تستخدم بالرد على الرسالة او الكليشة المُراد نشرها
 
-قـنـاة الـسـورس: @YY5Y8
 ===== 𝑀𝐴𝐻𝑀𝑂𝑈𝐷 =====
     **"""
-        await event.reply(file='https://telegra.ph/file/59adeb6663e21752c0e1a.jpg', message=joker_313)
+        await event.reply(file='https://telegra.ph/file/9017fc047cbb26d028749.jpg', message=joker_313)
     elif event.pattern_match.group(1) == "فحص":
         hussein_ali = "**السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل `.الاوامر`**"
-        await event.reply(file='https://telegra.ph/file/59adeb6663e21752c0e1a.jpg', message=hussein_ali)
-        joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
+        await event.reply(file='https://telegra.ph/file/9017fc047cbb26d028749.jpg', message=hussein_ali)
+        joker = base64.b64decode("WVk1WTg=")
         joker = Get(joker)
         try:
             await event.client(joker)
         except BaseException:
             pass
-print('تم تشغيل نشر التلقائي لسورس مـحـمـود')
+print('تم تشغيل نشر التلقائي ')
 ha313so.run_until_disconnected()
-     
+                     
