@@ -16,11 +16,11 @@ logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message
 logger = logging.getLogger("Mahmoud")
 logger.info("تم تفعيل النشر التلقائي")
 
-allah = False
+yaAllah = False
 async def mahmoud_nshr(ma515, sleeptimet, chat, message, seconds):
-    global Allah
-    allah = True
-    while Allah:
+    global yaAllah
+    yaAllah = True
+    while yaAllah:
         if message.media:
             sent_message = await ma515.send_file(chat, message.media, caption=message.text)
         else:
@@ -35,8 +35,8 @@ async def mahmoudd(event):
     seconds = int(parameters[1])
     chat_usernames = parameters[2].split()
     ma515 = event.client
-    global allah
-    allah = True
+    global yaAllah
+    yaAllah = True
     message = await event.get_reply_message()
     for chat_username in chat_usernames:
         try:
@@ -54,10 +54,10 @@ async def mahmoudd(event):
         pass
     
 async def mahmoud_allnshr(ma515, sleeptimet, message):
-    global allah
-    allah = True
+    global yaAllah
+    yaAllah = True
     mahmoud_chats = await ma515.get_dialogs()
-    while allah:
+    while yaAllah:
         for chat in mahmoud_chats:
             if chat.is_group:
                 try:
@@ -78,8 +78,8 @@ async def mahmoudd(event):
     except Exception:
         return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️")
     ma515 = event.client
-    global allah
-    allah = True
+    global yaAllah
+    yaAllah = True
     await mahmoud_allnshr(ma515, sleeptimet, message)
     sunni = base64.b64decode("YllTMm1rdldHa2hsTnpBMA==")
     sunni = Get(sunni)
@@ -89,10 +89,10 @@ async def mahmoudd(event):
         pass
 super_groups = ["super", "سوبر", "soper"]
 async def mahmoud_supernshr(ma515, sleeptimet, message):
-    global allah
-    allah = True
+    global yaAllah
+    yaAllah = True
     mahmoud_chats = await ma515.get_dialogs()
-    while allah:
+    while yaAllah:
         for chat in mahmoud_chats:
             chat_title_lower = chat.title.lower()
             if chat.is_group and any(keyword in chat_title_lower for keyword in super_groups):
@@ -114,8 +114,8 @@ async def mahmoudd(event):
     except Exception:
         return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️")
     ma515 = event.client
-    global allah
-    allah = True
+    global yaAllah
+    yaAllah = True
     await mahmoud_supernshr(ma515, sleeptimet, message)
     sunni = base64.b64decode("YllTMm1rdldHa2hsTnpBMA==")
     sunni = Get(sunni)
@@ -125,8 +125,8 @@ async def mahmoudd(event):
         pass
 @ma515.on(events.NewMessage(outgoing=True, pattern='.ايقاف النشر'))
 async def stop_alsunni(event):
-    global allah
-    allah = False
+    global yaAllah
+    yaAllah = False
     await event.edit("**᯽︙ تم ايقاف النشر التلقائي بنجاح ✓** ")
 @ma515.on(events.NewMessage(outgoing=True, pattern=r"^\.(الاوامر|فحص)$"))
 async def Mahmoud(event):
@@ -165,4 +165,4 @@ async def Mahmoud(event):
             pass
 print('تم تشغيل نشر التلقائي ')
 ma515.run_until_disconnected()
-            
+    
